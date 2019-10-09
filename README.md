@@ -69,4 +69,3 @@ Node: The trie doesn't contains extra information except page number and block n
 
 * The algorithm has *O(1)* of querying time in the best case.
 * The algorithm has *O(n)* of querying time in the worst case.(n stands for length of the word in bits)
-* Querying time only related with the length of a word in bits.
