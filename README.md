@@ -35,7 +35,7 @@ namespace ConsoleTest
                         str += c;
                     else if (str != "")
                     {
-                        q.AddWord(str, 1, count++);
+                        q.AddWord(str, 1, count++); // Parameters are "word to query", "page No." and "block No.".
                         str = "";
                     }
                 }
@@ -61,3 +61,12 @@ namespace ConsoleTest
     }
 }
 ```
+Use *q.AddWord(word, page, block)* to add page and block informations. <br>
+Use *q.QuaryWord(string)* to quary a word and find the information saved in previous.<br>
+Node: The trie doesn't contains extra information except page number and block number.
+
+## Algorithm Result
+
+* The algorithm has *O(1)* of querying time for the best condition.
+* The algorithm has *O(n)* of querying time for the worst condition.(n stands for length of the word in bits)
+* Querying time only related with the length of a word in bits.
